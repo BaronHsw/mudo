@@ -41,7 +41,7 @@ public class BasicController {
         if (user != null) {
             return user;
         } else {
-            return "123123123   ";
+            return "账号或密码错误！";
         }
     }
 

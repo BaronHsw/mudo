@@ -1,11 +1,16 @@
 # server config
 server:
   port: 8080
+  tomcat:
+    uri-encoding: UTF-8
 
 # mybatis
 mybatis.mapper-locations: classpath:mapper/*.xml
 mybatis.configuration.map-underscore-to-camel-case: true
+
+# spring
 spring:
+  # dataBase
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/mytest?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
     username: root
@@ -20,7 +25,14 @@ spring:
       max-idle: 100
       max-wait-millis: 10000
     driver-class-name: com.mysql.cj.jdbc.Driver
+  # thymeleaf
   thymeleaf:
     cache: false
+  # encoding
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
 
 

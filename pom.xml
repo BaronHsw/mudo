@@ -77,7 +77,7 @@
                 <!-- spring-boot:run 中文乱码解决 -->
                 <configuration>
                     <fork>true</fork>
-                    <jvmArguments>-Dfile.encoding=GBK</jvmArguments>
+                    <jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
                 </configuration>
             </plugin>
         </plugins>
